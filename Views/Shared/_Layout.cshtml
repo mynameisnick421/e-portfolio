@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Nick's E-Portfolio</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <script src="https://kit.fontawesome.com/1617480140.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        <script src="https://kit.fontawesome.com/1617480140.js"></script>
+    </environment>
+</head>
+<body>
+    <nav class="navbar black_background navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle white_font" data-toggle="collapse" data-target=".navbar-collapse">
+                    Menu
+                </button>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="nav_branding white_font"><span class="red_font">E</span>.Portfolio()</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul>
+                    <li><a class="white_font nav_link" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a class="white_font nav_link" asp-area="" asp-controller="Projects">Projects</a></li>
+                    <li><a class="resume_link" asp-area="" asp-controller="Home" asp-action="Resume">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <partial name="_CookieConsentPartial" />
+
+    <div class="body_container">
+        @RenderBody()
+    </div>
+    <footer class="white-font">
+        <div class="footer-container">
+            <img class="footer-logo" src="images/logo-white.png">
+            <div class="footer-blurb">
+                <p>
+                    Creating, Maintaining, <span class="red_ft">& Improving</span>
+                    <br>
+                    applications that <span class="red_ft">help you.</span>
+                </p>
+            </div>
+
+            <div class="link-container">
+
+                <p>Find me <span class="red_ft">below.</span></p>
+                <a href="https://www.linkedin.com/in/nick-houser-4894611b1/" target="blank_">
+                    <span class="link">
+                        <i title="LinkedIn"
+                           class="fab fa-linkedin-in"></i>
+                    </span>
+                </a>
+                <a href="https://github.com/mynameisnick421" target="blank_">
+                    <span class="link">
+                        <i title="GitHub"
+                           class="fab fa-git"></i>
+                    </span>
+                </a>
+                <a href="mailto:nick.houser421@gmail.com"><span class="link"><i title="Email" class="far fa-envelope"></i></span></a>
+
+                <p class="copyright">
+                    Made by me <span class="red_ft">&copy;</span>
+                    2020
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

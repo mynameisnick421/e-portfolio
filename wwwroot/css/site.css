@@ -1,0 +1,416 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+
+
+
+.body_container {
+
+}
+
+
+
+nav ul {
+    margin: 0;
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+}
+
+.nav_link {
+    display: inline-block;
+    padding: 15px 15px;
+    font-size: 1.2em;
+    line-height: 20px;
+}
+
+    .nav_link:hover {
+        color: #000;
+        text-decoration: none;
+        background-color: #fff;
+    }
+
+.nav_branding {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 1.5em;
+    line-height: 20px;
+}
+
+.nav_branding:hover{
+    color:red;
+    text-decoration:none;
+}
+
+.resume_link {
+    color: red;
+    display: inline-block;
+    padding: 15px 15px;
+    font-size: 1.2em;
+    line-height: 20px;
+}
+
+.resume_link:hover{
+    color:black;
+    background-color:red;
+    text-decoration:none;
+}
+
+
+.test{
+    height:900px;
+    background-color:blue;
+}
+
+
+footer{
+    height: auto;
+    color:#fff;
+}
+
+    footer .footer_content {
+        display: inline-block;
+        padding: 15px 15px;
+    }
+
+
+section {
+    padding: 0;
+}
+
+.section-title, .title {
+    /*margin-top: 100px;*/
+    margin-bottom: 50px;
+}
+
+
+.filter {
+    filter: brightness(50%) sepia(100) saturate(100) hue-rotate(25deg);
+    width: 100%;
+}
+
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    /*background: black;*/
+}
+
+/*Introduction*/
+
+#introduction {
+    /*background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(../images/engine-background.jpg);*/
+    height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 120%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container {
+    padding-top: 325px;
+    text-align: center;
+    padding-bottom: 40px;
+    backdrop-filter: blur(0);
+}
+
+.content {
+    /*background-color: rgba(0,0,0,.5);*/
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: bold;
+   /* color: white;*/
+}
+
+.sub-title {
+    font-size: 2.5em;
+    margin-bottom: 100px;
+    /*color: white;*/
+}
+
+
+/*About Me*/
+
+#aboutMe {
+    margin: 0;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    /*color: white;*/
+}
+
+    #aboutMe .content-container {
+/*        background-color: rgba(0, 0, 0, 0.6);
+*/    }
+
+.sec p {
+    margin: 0 10% 70px 10%;
+    font-size: 1.8em;
+    line-height: 50px;
+}
+
+.section-title {
+    font-size: 3em;
+    margin-bottom: 100px;
+}
+
+.section-subtitle {
+    font-size: 2.5em;
+    margin-bottom: .7em;
+}
+
+#aboutMe .sec {
+    margin-bottom: 300px;
+}
+/*Experience*/
+
+
+#experience .content-container {
+    background-image: url(../images/html-background.jpg);
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 10%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(230, 39, 39, 0.5), 0 6px 20px 0 rgba(88, 8, 8, 0.19);
+   /* color: white;*/
+    font-size: 1.3em;
+}
+
+.skills-title {
+   /* color: white;*/
+    font-size: 1.6em;
+}
+
+.skills-container > div {
+    width: 33%;
+    padding: 5px;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+.styled_list li {
+    list-style-type: none;
+    padding: 2px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.app-dev {
+    border-left: rgba(230, 39, 39, 0.5) 1px solid;
+    border-right: rgba(230, 39, 39, 0.5) 1px solid;
+}
+
+.heading,
+.skill-heading {
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: .3em;
+    font-size: 1.2em;
+    margin: .7em 0;
+}
+
+.heading {
+    margin: 1.7em 0 .7em 0;
+}
+
+.skill-heading {
+    margin: .7em 0;
+}
+
+.experience-icon {
+    width: 100%;
+    text-align: center;
+    font-size: 2.6em;
+    display: block;
+    color: rgb(214, 33, 33);
+    margin-top: 20px;
+}
+
+
+
+/*Testimonials*/
+
+.testimonials {
+    max-width: 1100px;
+    height: auto;
+    /*color: white;*/
+    margin: 0 auto;
+}
+
+.item {
+    height: 400px;
+    font-size: 1.3em;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+    border-radius: 100%;
+}
+
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}
+
+.carousel-caption {
+    position: static;
+    padding: 20px 10%;
+}
+
+.carousel-indicators {
+    bottom: 0;
+}
+
+
+/*Colors*/
+
+.black_background{
+    background-color:#000;
+}
+.black_font{
+    color: #000;
+}
+.white_background{
+    background-color:#fff
+}
+.white_font {
+    color: #FFF;
+}
+.red_font{
+    color:red;
+}
+.purple_font {
+    color: #B34FBF;
+}
+
+.red_ft {
+    /* color: rgb(214, 33, 33);*/
+    color: red;
+    font-weight: bold;
+}
+
+.carousel-caption{
+    color:black;
+    text-shadow:none;
+}
+
+    .carousel-control{
+
+    }
+
+    @media only screen and (max-width: 900px) {
+        .skills-container {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .app-dev {
+        border: none;
+    }
+
+    .skills-container > div {
+        width: 100%;
+    }
+
+    .experience-icon {
+        font-size: 3em;
+    }
+
+    .item {
+        height: 450px;
+    }
+
+    #introduction {
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../images/engine-background-mobile.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 120%;
+    }
+}
+
+
+/*Footer*/
+footer {
+    min-height: 450px;
+    padding-top: 20px;
+    padding-bottom: 78px;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+.footer-logo {
+    width: 50px;
+}
+
+.footer-blurb {
+    font-size: 2em;
+    margin: 50px 0;
+}
+
+.link-container {
+    font-size: 1.5em;
+}
+
+.link-container a {
+    margin: .3em;
+    padding: .1em;
+}
+
+
+.link-container .link {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: inline-block;
+    line-height: 2em;
+    transition: .3s;
+    border: 1px solid rgb(214, 33, 33);
+}
+
+.link-container a:visited,
+.link-container a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.link-container a:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.link-container a:hover i {
+    transform: scale(1.1);
+}
+
+.link-container a:hover .link {
+    background-color: rgb(214, 33, 33);
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 540px) {
+
+    .item {
+        height: 500px;
+    }
+}
