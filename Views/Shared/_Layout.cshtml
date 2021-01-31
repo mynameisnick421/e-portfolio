@@ -19,23 +19,20 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar black_background navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle white_font" data-toggle="collapse" data-target=".navbar-collapse">
-                    Menu
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="nav_branding white_font"><span class="red_font">E</span>.Portfolio()</a>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a asp-controller="Home"><img class="logo" src="images/logo-red.png"></a>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul>
-                    <li><a class="white_font nav_link" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a class="white_font nav_link" asp-area="" asp-controller="Projects">Projects</a></li>
-                    <li><a class="resume_link" asp-area="" asp-controller="Home" asp-action="Resume">Resume</a></li>
-                </ul>
-            </div>
+            <nav>
+                <button class="aboutMe nav-link" type="button">About</button>
+                <button class="skills nav-link" type="button">Skills</button>
+                <button class="contact nav-link" type="button">Contact</button>
+                <a class="white_font nav-link asp-link" asp-area="" asp-controller="Projects">Projects</a>
+                <a class="nav-link resume-link" href="documents/Resume.pdf" target="blank_">Resume  <i class="fas fa-download"></i></a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
     <partial name="_CookieConsentPartial" />
 
@@ -72,7 +69,7 @@
 
                 <p class="copyright">
                     Made by me <span class="red_ft">&copy;</span>
-                    2020
+                    @DateTime.Now.Year.ToString()
                 </p>
             </div>
         </div>
