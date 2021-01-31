@@ -12,7 +12,7 @@ namespace e_portfolio.Models
         [DisplayName("Project")]
         public string Name { get; set; }
         public string Description { get; set; }
-        [DisplayName("Repositoy")]
+        [DisplayName("Repository")]
         public string URL { get; set; }
     }
 }
